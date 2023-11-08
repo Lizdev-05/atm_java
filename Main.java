@@ -19,6 +19,26 @@ public class Main {
                         "1.View Available Balance\n2.Withdraw Amount\n3.Deposit Amount\n4.View Account Statement\n5.Exit");
                 System.out.println("Enter choice ");
                 int choice = logIn.nextInt();
+                switch (choice) {
+                    case 1:
+
+                        break;
+                    case 2:
+
+                        break;
+                    case 3:
+
+                        break;
+                    case 4:
+
+                        break;
+                    case 5:
+
+                        break;
+
+                    default:
+                        break;
+                }
 
             }
 
