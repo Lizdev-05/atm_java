@@ -11,5 +11,12 @@ public class Main {
         int atmNumber = logIn.nextInt();
         System.out.print("Enter your atm pin: ");
         int atmPin = logIn.nextInt();
+
+        if ((defaultAtmNumber == atmNumber) && (defaultAtmPin == atmPin)) {
+            System.out.println("Validation Successful!");
+        } else {
+            System.out.println("Incorrect Atm number or pin");
+            System.exit(0);
+        }
     }
 }
