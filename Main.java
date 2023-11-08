@@ -33,7 +33,8 @@ public class Main {
 
                         break;
                     case 5:
-
+                        System.out.println("Kindly take your card\n Thank you for using Lizdev ATM!");
+                        System.exit(0);
                         break;
 
                     default:
