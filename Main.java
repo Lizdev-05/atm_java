@@ -7,13 +7,21 @@ public class Main {
         int defaultAtmPin = 1234;
 
         Scanner logIn = new Scanner(System.in);
+        System.out.println("Welcome to Lizdev ATM !");
         System.out.print("Enter your atm number:  ");
         int atmNumber = logIn.nextInt();
         System.out.print("Enter your atm pin: ");
         int atmPin = logIn.nextInt();
 
         if ((defaultAtmNumber == atmNumber) && (defaultAtmPin == atmPin)) {
-            System.out.println("Validation Successful!");
+            while (true) {
+                System.out.println(
+                        "1.View Available Balance\n2.Withdraw Amount\n3.Deposit Amount\n4.View Account Statement\n5.Exit");
+                System.out.println("Enter choice ");
+                int choice = logIn.nextInt();
+
+            }
+
         } else {
             System.out.println("Incorrect Atm number or pin");
             System.exit(0);
