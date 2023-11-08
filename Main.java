@@ -5,7 +5,7 @@ public class Main {
     public static void main(String[] args) {
         int defaultAtmNumber = 987654321;
         int defaultAtmPin = 1234;
-
+        // logIn Scanner to read input from the user
         Scanner logIn = new Scanner(System.in);
         System.out.println("Welcome to Lizdev ATM !");
         System.out.print("Enter your atm number:  ");
@@ -38,6 +38,7 @@ public class Main {
                         break;
 
                     default:
+                        System.out.println("Please enter correct number");
                         break;
                 }
 

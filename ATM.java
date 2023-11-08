@@ -1,7 +1,7 @@
 public class ATM {
     private double balance;
     private double depositAmount;
-    private double withdrawnAmount;
+    private double withdrawAmount;
 
     // Default constructor
     public ATM() {
@@ -17,8 +17,8 @@ public class ATM {
         return depositAmount;
     }
 
-    public double getWithdrawnAmount() {
-        return withdrawnAmount;
+    public double getWithdrawAmount() {
+        return withdrawAmount;
     }
 
     public void setBalance(double balance) {
@@ -29,8 +29,8 @@ public class ATM {
         this.depositAmount = depositAmount;
     }
 
-    public void setWithdrawnAmount(double withdrawnAmount) {
-        this.withdrawnAmount = withdrawnAmount;
+    public void setWithdrawAmount(double withdrawAmount) {
+        this.withdrawAmount = withdrawAmount;
     }
 
 }
