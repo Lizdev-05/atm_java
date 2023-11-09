@@ -6,4 +6,6 @@ public interface AtmOperationInterface {
 
     public String viewBalance();
 
+    public void viewAccountStatement();
+
 }

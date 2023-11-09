@@ -38,7 +38,7 @@ public class Main {
                             operation.depositAmount(depositAmount);
                             break;
                         case 4:
-
+                            operation.viewAccountStatement();
                             break;
                         case 5:
                             System.out.println("Kindly take your card\n Thank you for using Lizdev ATM!");
