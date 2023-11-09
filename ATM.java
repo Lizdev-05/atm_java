@@ -4,22 +4,11 @@ public class ATM {
     private double withdrawAmount;
 
     // Default constructor
-    public ATM() {
-
+    public ATM(double balance, double depositAmount, double withdrawAmount) {
+        this.balance = balance;
     }
 
     // Getter and Setter
-    public double getBalance() {
-        return balance;
-    }
-
-    public double getDepositAmount() {
-        return depositAmount;
-    }
-
-    public double getWithdrawAmount() {
-        return withdrawAmount;
-    }
 
     public void setBalance(double balance) {
         this.balance = balance;
@@ -31,6 +20,18 @@ public class ATM {
 
     public void setWithdrawAmount(double withdrawAmount) {
         this.withdrawAmount = withdrawAmount;
+    }
+
+    public double getBalance() {
+        return this.balance;
+    }
+
+    public double getDepositAmount() {
+        return depositAmount;
+    }
+
+    public double getWithdrawAmount() {
+        return withdrawAmount;
     }
 
 }

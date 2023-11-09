@@ -1,10 +1,9 @@
-public interface atmOperationInterface {
-    public void viewBalance();
+public interface AtmOperationInterface {
 
     public void withdrawAmount(double withdrawAmount);
 
     public void depositAmount(double depositAmount);
 
-    public void viewBalance(double viewBalance);
+    public String viewBalance();
 
 }
