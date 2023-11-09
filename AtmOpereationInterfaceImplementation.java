@@ -9,19 +9,21 @@ public class AtmOpereationInterfaceImplementation implements AtmOperationInterfa
 
     @Override
     public void withdrawAmount(double withdrawAmount) {
-        System.out.println("Amount withdrawn balance is ");
+        System.out.println(withdrawAmount + " withdrawn successfully!");
+        atm.setBalance(atm.getBalance() - withdrawAmount);
+        viewBalance();
     }
 
     @Override
     public void depositAmount(double depositAmount) {
-        System.out.println(depositAmount + "successfully!!!");
+        System.out.println(depositAmount + " deposited successfully!!!");
         atm.setBalance(atm.getBalance() + depositAmount);
         viewBalance();
     }
 
     @Override
     public String viewBalance() {
-        String val = "Available balance is " + atm.getBalance();
+        String val = "Your available balance is " + atm.getBalance();
         System.out.println(val);
         return String.valueOf(atm.getBalance());
     }

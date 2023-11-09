@@ -28,7 +28,9 @@ public class Main {
 
                             break;
                         case 2:
-
+                            System.out.println("Enter amount to withdraw");
+                            double withdrawAmount = logIn.nextDouble();
+                            operation.withdrawAmount(withdrawAmount);
                             break;
                         case 3:
                             System.out.println("Enter amount to deposit");
