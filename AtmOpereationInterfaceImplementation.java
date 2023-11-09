@@ -14,7 +14,7 @@ public class AtmOpereationInterfaceImplementation implements AtmOperationInterfa
     @Override
     public void withdrawAmount(double withdrawAmount) {
         if (withdrawAmount % 500 == 0) {
-            if (withdrawAmount < atm.getBalance()) {
+            if (withdrawAmount <= atm.getBalance()) {
                 accountStatement.put(withdrawAmount, " withdrawn");
                 System.out.println(withdrawAmount + " withdrawn successfully!");
                 atm.setBalance(atm.getBalance() - withdrawAmount);
@@ -29,7 +29,7 @@ public class AtmOpereationInterfaceImplementation implements AtmOperationInterfa
 
     @Override
     public void depositAmount(double depositAmount) {
-        accountStatement.put(depositAmount, " withdrawn");
+        accountStatement.put(depositAmount, " deposited");
         System.out.println(depositAmount + " deposited successfully!!!");
         atm.setBalance(atm.getBalance() + depositAmount);
         viewBalance();
